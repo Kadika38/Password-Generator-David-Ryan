@@ -9,7 +9,7 @@ function generatePassword() {
   var numyBois = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var specBois = ["!", "\u0022", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\u005c", "]", "^", "_", "`", "{", "|", "}", "~"];
 
-  //comfirms to define password parameters
+  //comfirms/prompts to define password parameters
   var howBig = parseInt(prompt("How many characters would you like your password to be?  (minimum 8, maximum 128)"));
   // make sure the user enters a usable value for password length
   while (howBig < 8 || howBig > 128 || !(howBig > 0)) {
